@@ -1,0 +1,41 @@
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #8EE4AF;
+  border-radius: .25rem;
+  color: #379683;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  opacity: 1;
+  transition: .15s background, .15s opacity;
+
+  &:hover {
+    background: #EDF5E1;
+  }
+
+  &:disabled {
+    background: transparent;
+    cursor: not-allowed;
+    opacity: 0.05;
+  }
+
+  &.checked {
+    background: #379683;
+    border-color: #379683;
+    color: white;
+  }
+
+  &.complete {
+    background: #05386B;
+    border-color: #05386B;
+    color: white;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

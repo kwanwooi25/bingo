@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: #05386B;
+  }
+
+  button {
+    font-size: 1.25rem;
+    background: #05386B;
+    border: 1px solid #05386B;
+    border-radius: .25rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: .5rem 1rem;
+    transition: .15s background, .15s color;
+
+    &:hover,
+    &:focus {
+      background: white;
+      color: #05386B;
+    }
+  }
+}

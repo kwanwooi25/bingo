@@ -1,0 +1,52 @@
+.boards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-modal {
+  background: white;
+  border-radius: .5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  button {
+    font-size: .75rem;
+    background: #05386B;
+    border: 1px solid #05386B;
+    border-radius: .25rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: .5rem 1rem;
+    transition: .15s background, .15s color;
+
+    &:hover,
+    &:focus {
+      background: white;
+      color: #05386B;
+    }
+  }
+
+  &-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background: rgba(#000, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
